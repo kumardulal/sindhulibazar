@@ -13,7 +13,7 @@ export default function ImgMediaCard({ data }) {
   const [open, setOpen] = React.useState(false)
 
   const [count, setCount] = useState(1)
-  const deliverycharge = 150
+  const deliverycharge = 100
   const [totalprice, setTotalPrice] = useState(0)
 
 
@@ -59,7 +59,7 @@ export default function ImgMediaCard({ data }) {
             {description}
           </Typography>
           <br />
-          <Typography variant='title'>Rs. {price}</Typography>
+          <Typography variant='title'>Rs.- {price}</Typography>
         </CardContent>
         <CardActions>
           <Box sx={{ width: '100%' }}>
