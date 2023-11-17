@@ -3,7 +3,7 @@ import { Button } from '@mui/material'
 import React,{useEffect, useState} from 'react'
 
 const WhatsAppMessageLink = ({ orderDetails }) => {
-  const totalCost = orderDetails.count * orderDetails.price + 100
+  const totalCost = orderDetails.count * orderDetails.price + 150
   const [currentShift, setCurrentShift] = useState('');
   const [admin, setAdmin] = useState('');
 
@@ -59,7 +59,7 @@ useEffect(()=>{
         '##quantity: ' +
         orderDetails.count +
         '##Delivery Charge:Rs.' +
-        100 +
+        150 +
         '##total price:' +
         totalCost
     )}`
@@ -76,7 +76,7 @@ useEffect(()=>{
       >
         {/* <Button fullWidth size="medium" variant='outlined' onClick={handleClickOpen}>Buy</Button> */}
         <Button sx={{ mb: 2 }} fullWidth size='medium' variant='outlined'>
-          ORDER NOW
+          ORDER NOW( खरीद गर्नुहोस्।)
         </Button>
       </a>
     </div>

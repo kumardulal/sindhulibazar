@@ -14,6 +14,7 @@ const About = () => {
   }
 
   const paperStyle = {
+
     height: '50vh',
     position: 'relative',
     backgroundImage: `url(${process.env.PUBLIC_URL}/sindhuli.jpg)`,
@@ -91,7 +92,8 @@ const About = () => {
                     sx={{
                       fontWeight: 'bold',
                       pt: 5,
-                      color: '#090830',
+                      color: 'dark',
+                      textDecoration:"underline"
                     }}
                   >
                     Welcome to Sindhuli Liquor Express!
@@ -102,7 +104,10 @@ const About = () => {
                     p={{ sm: 1, md: 5 }}
                     sx={{
                       fontWeight: 'bold',
-                      color: '#090830',
+                      color: 'black',
+                      backgroundColor:"white",
+                      padding:2,
+                      opacity:"40%"
                     }}
                   >
                     At Sindhuli Liquor Express, we are proud to introduce an
@@ -127,9 +132,10 @@ const About = () => {
                     fontSize={{ sm: 20, lg: 35 }}
                     sx={{
                       fontWeight: 'bold',
-
                       pt: 7,
-                      color: '#090830',
+                      padding:2,
+                      textDecoration:"underline"
+                   
                     }}
                   >
                     Our Sindhuli Startup
@@ -140,7 +146,10 @@ const About = () => {
                     p={{ sm: 1, md: 5 }}
                     sx={{
                       fontWeight: 'bold',
-                      color: '#090830',
+                      color: 'black',
+                      backgroundColor:"white",
+                      padding:2,
+                      opacity:"40%"
                     }}
                   >
                     Founded by a dynamic group of entrepreneurs - Kumar Dulal,
@@ -167,7 +176,9 @@ const About = () => {
                     sx={{
                       fontWeight: 'bold',
                       pt: 5,
-                      color: '#090830',
+                      textDecoration:"underline",
+                      padding:2,
+                      
                     }}
                   >
                     Quality Liquor, Delivered at Your Doorstep
@@ -178,7 +189,10 @@ const About = () => {
                     p={{ sm: 1, md: 5 }}
                     sx={{
                       fontWeight: 'bold',
-                      color: '#090830',
+                      color: 'black',
+                      backgroundColor:"white",
+                      padding:1,
+                      opacity:"40%"
                     }}
                   >
                     We take pride in offering an extensive range of liquors,

@@ -45,9 +45,11 @@ export default function ImgMediaCard({ data }) {
       <ConfirmModal open={open} setOpen={setOpen} handleClose={handleClose} />
       <Card sx={{ maxWidth: 345 }} elevation={5}>
         <CardMedia
+        style={{paddingTop:5}}
           component='img'
           alt='green iguana'
           height='140'
+          
           sx={{ objectFit: 'contain' }}
           image={image}
         />
@@ -59,11 +61,12 @@ export default function ImgMediaCard({ data }) {
             {description}
           </Typography>
           <br />
-          <Typography variant='title'>Rs.- {price}</Typography>
+          <Typography variant='title'>Rs. {price}</Typography>
         </CardContent>
         <CardActions>
           <Box sx={{ width: '100%' }}>
             {/* quantity of its set by users */}
+          
             <Button
               sx={{ mr: 2 }}
               size='small'
@@ -93,7 +96,7 @@ export default function ImgMediaCard({ data }) {
               variant='outlined'
               onClick={handleClickOpen}
             >
-              How to purchase
+              How to purchase?("खरीद कसरी गर्ने?)
             </Button>
             {/* <Button size="small">Learn More</Button> */}
           </Box>
@@ -102,3 +105,4 @@ export default function ImgMediaCard({ data }) {
     </>
   )
 }
+

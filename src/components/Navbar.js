@@ -15,6 +15,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import { Link, useLocation } from 'react-router-dom'
 
+
 const drawerWidth = 240
 const navItems = ['Home', 'About', 'Contact']
 
@@ -23,6 +24,8 @@ function DrawerAppBar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const location = useLocation()
+
+  
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState)
@@ -42,6 +45,7 @@ function DrawerAppBar(props) {
             style={{
               Height: 70,
               width: 55,
+              
             }}
             src=' https://i.imgur.com/SE8uswq.png'
             alt='logox'
@@ -94,6 +98,7 @@ function DrawerAppBar(props) {
   const container =
     window !== undefined ? () => window().document.body : undefined
 
+    
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -113,23 +118,34 @@ function DrawerAppBar(props) {
             component='div'
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
+             <Link
+             style={{textDecoration:"none"}}
+                      to='/'
+                      > 
             <div
               style={{
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: 'left',
                 alignItems: 'center',
+                marginLeft:70
               }}
             >
+                
               <img
+              
                 style={{
                   Height: 80,
                   width: 60,
+                  padding:5
                 }}
                 src=' https://i.imgur.com/SE8uswq.png'
                 alt='logox'
               />
-              <text>SINDHULI BAZAR</text>
+              <text style={{fontFamily:"revert-layer",fontWeight:"bold",color:"white",fontSize:25}}>SINDHULI BAZAR</text>
+            
+           
             </div>
+            </Link>
           </Typography>
           <List sx={{ display: 'flex', flexDirection: 'row' }}>
             {navItems.map((item) => (

@@ -13,7 +13,7 @@ const Home = () => {
               <img src='https://i.imgur.com/YSIHio3.pngjpg' style={{height:250}}/> */}
             <Box sx={{ display: 'flex', justifyContent:'center', flexWrap: 'wrap', gap: 2, maxWidth: '100%' }} mt={5}>
              
-            <text style={{width:"100%",fontSize:20,backgroundColor:"orange",padding:10}}>FIND YOUR DRINK HERE</text>           
+            <text style={{width:"100%",fontSize:20,backgroundColor:"orange",padding:10}}>"तलबाट आफ्नो मनपरेको पेय खरीद गर्नुहोस्। Chhat Vibes Hitting Soon! 24 hours delivery Available"</text>           
             {
                 Item?.map((dt, index) => (
                     <ImgMediaCard key={index} data={dt} />
