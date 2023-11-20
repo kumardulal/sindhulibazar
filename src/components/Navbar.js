@@ -50,11 +50,12 @@ function DrawerAppBar(props) {
             src=' https://i.imgur.com/SE8uswq.png'
             alt='logox'
           />
-          <text>SINDHULI BAZAR</text>
+          <text style={{fontSize:15}}>SINDHULI BAZAR</text>
         </div>
       </Typography>
 
       <Divider />
+      {/* ////comonent inisde side bar */}
       <List>
         {navItems.map((item) => (
           <ListItem
@@ -64,7 +65,7 @@ function DrawerAppBar(props) {
               textAlign: 'center',
               backgroundColor:
                 location.pathname === `/${item.toLowerCase()}`
-                  ? '#f0f0f0'
+                  ? '#'
                   : 'inherit',
             }}
           >
@@ -147,7 +148,7 @@ function DrawerAppBar(props) {
             </div>
             </Link>
           </Typography>
-          <List sx={{ display: 'flex', flexDirection: 'row' }}>
+          <List sx={{ display: 'flex', flexDirection: 'row',padding:1.5 }}>
             {navItems.map((item) => (
               <ListItem key={item} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
